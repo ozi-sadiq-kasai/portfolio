@@ -11,11 +11,11 @@ const Hero = () => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('animate');
                     } else {
-                        entry.target.classList.remove('animate'); // Remove this line if you want the animation to happen only once
+                        entry.target.classList.remove('animate');
                     }
                 });
             },
-            { threshold: 0.3 } // Trigger animation when 30% of the block is visible
+            { threshold: 0.3 }
         );
 
         blocks.forEach((block) => observer.observe(block));
@@ -68,7 +68,9 @@ const StyledWrapper = styled.section`
         }
         p {
             font-size: 1.4rem;
-            // margin-top: 0;
+        }
+        .block {
+            transform: translateX(250px);
         }
     }
 `;

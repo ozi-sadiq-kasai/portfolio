@@ -15,13 +15,24 @@ const Hero = () => {
                     }
                 });
             },
-            { threshold: 0.3 }
+            { threshold: 0.1 }
         );
 
         blocks.forEach((block) => observer.observe(block));
 
-        // Clean up the observer
-        return () => observer.disconnect();
+        // Handle viewport resize
+        const handleResize = () => {
+            blocks.forEach((block) =>
+                block.classList.remove('animate')
+            );
+        };
+        window.addEventListener('resize', handleResize);
+
+        // Clean up
+        return () => {
+            observer.disconnect();
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     return (
@@ -69,9 +80,7 @@ const StyledWrapper = styled.section`
         p {
             font-size: 1.4rem;
         }
-        .block {
-            transform: translateX(300px);
-        }
+       
     }
 `;
 export default Hero;

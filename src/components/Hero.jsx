@@ -70,7 +70,7 @@ const StyledWrapper = styled.section`
             font-size: 1.4rem;
         }
         .block {
-            transform: translateX(250px);
+            transform: translateX(300px);
         }
     }
 `;

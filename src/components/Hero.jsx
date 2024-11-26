@@ -76,7 +76,7 @@ const StyledWrapper = styled.section`
         h2 {
             font-size: 2rem;
             top: -1.4rem;
-            border: 1px sold red;
+            border: 1px solid red;
         }
         p {
             font-size: 1.4rem;
@@ -85,6 +85,10 @@ const StyledWrapper = styled.section`
             opacity: 0;
             transform: translateX(200px);
             transition: opacity 1s ease, transform 3s ease;
+        }
+        .animate {
+            opacity: 1;
+            transform: translateX(0);
         }
     }
 `;

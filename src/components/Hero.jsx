@@ -81,6 +81,11 @@ const StyledWrapper = styled.section`
         p {
             font-size: 1.4rem;
         }
+        .block {
+            opacity: 0;
+            transform: translateX(200px);
+            transition: opacity 1s ease, transform 3s ease;
+        }
     }
 `;
 export default Hero;

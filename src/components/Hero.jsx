@@ -76,7 +76,6 @@ const StyledWrapper = styled.section`
         h2 {
             font-size: 2rem;
             top: -1.4rem;
-            border: 1px solid red;
         }
         p {
             font-size: 1.4rem;

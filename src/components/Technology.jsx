@@ -5,7 +5,7 @@ import { RiTailwindCssFill } from 'react-icons/ri';
 import { BsFiletypeCss } from 'react-icons/bs';
 import { BsFiletypeScss } from 'react-icons/bs';
 
-const Languages = () => {
+const Technology = () => {
     const languages = [
         <FaNodeJs />,
         <GrReactjs />,
@@ -15,8 +15,8 @@ const Languages = () => {
     ];
     const colors = ['#68A063', '#61DAFB', '#38BDF8', '#264de4', '#CF649A'];
     return (
-        <StyledWrapper className='container'>
-            <h2>Languages</h2>
+        <StyledWrapper className='container' id='technology'>
+            <h2>Technology</h2>
             <StyledContent>
                 {languages.map((language, index) => (
                     <li key={index} style={{color:colors[index]}}>{language}</li>
@@ -33,7 +33,7 @@ const StyledWrapper = styled.section`
         color: var(--primary-300);
     }
 `;
-export default Languages;
+export default Technology;
 const StyledContent = styled.ul`
     display: flex;
     padding:1rem;

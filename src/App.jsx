@@ -2,7 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
 import Projects from './components/Projects';
-import Languages from './components/Languages';
+import Technology from './components/Technology';
 import Footer from './components/Footer';
 const App = () => {
     return (
@@ -11,7 +11,7 @@ const App = () => {
             <Hero />
             <About />
             <Projects />
-            <Languages />
+            <Technology />
             <Footer />
         </main>
     );

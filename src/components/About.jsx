@@ -3,7 +3,7 @@ import { device } from '../utils/mediaQueries';
 
 const About = () => {
     return (
-        <StyledContent className='container'>
+        <StyledContent className='container' id='about'>
             <h2>About</h2>
             <p>
                 As a frontend developer, crafting engaging,

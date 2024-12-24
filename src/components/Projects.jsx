@@ -1,8 +1,9 @@
 import styled from "styled-components";
-import girl from "../assets/girl.jpg";
 import clearmind from "../assets/clearmind.png"
+import cbae from '../assets/cbae.png'
 import { DiGithubBadge } from "react-icons/di";
 import { FaLink } from "react-icons/fa6";
+import { device } from '../utils/mediaQueries'
 
 const Projects = () => {
     const projects = [
@@ -14,15 +15,16 @@ const Projects = () => {
             code:"https://github.com/ozi-sadiq-kasai/clear-mind",
         },
         {
-            image: girl,
-            heading: "heading1",
-            description: "alkflskfjlsdjflsfjask",
+            image: cbae,
+            heading: "Fully Responsive Menu Listing",
+            link:'https://react-cbae-menu.vercel.app',
+            description: "A fully responsive restaurant menu app for a local eatery, powered by a CMS backend for effortless menu and price updates",
         }
      
     ];
 
     return (
-        <StyledContent className="container">
+        <StyledContent className="container" id='projects'>
             <h2>Projects</h2>
             <StyledProjects>
                 {projects.map((project, index) => (
@@ -80,6 +82,7 @@ const StyledProjects = styled.ul`
     }
 
     h2 {
+        padding-top:5px;
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
     }
@@ -93,6 +96,7 @@ display:flex;
 justify-content:center;
 gap:1rem;
 cursor: pointer;
+padding-bottom:15px;
 
 a {
             color: var(--primary-500);
@@ -103,6 +107,13 @@ a {
                 color: var(--primary-100);
             }
         }
+    }
+
+    @media ${device.mobile}{
+        flex-direction: column;
+    }
+    .div-links{
+        padding-bottom:0;
     }
     
 `;

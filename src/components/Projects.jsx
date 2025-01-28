@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import clearmind from "../assets/clearmind.png"
+import Foxhall from '../assets/Foxhall.png'
 import cbae from '../assets/cbae.png'
 import { DiGithubBadge } from "react-icons/di";
 import { FaLink } from "react-icons/fa6";
@@ -8,18 +9,26 @@ import { device } from '../utils/mediaQueries'
 const Projects = () => {
     const projects = [
         {
+            image: Foxhall,
+            heading: "Winery Landing Page",
+            description: "A responsive Landing Page built with styled components",
+            link:"https://foxhall.onrender.com",
+            code:"https://github.com/ozi-sadiq-kasai/Foxhall",
+        },
+        {
+            image: cbae,
+            heading: "Fully Responsive Menu Listing",
+            link:'https://react-cbae-menu.vercel.app',
+            description: "A responsive restaurant menu app for a local eatery, powered by a CMS backend for effortless menu and price updates",
+        },
+        {
             image: clearmind,
             heading: "Mental Health Landing Page",
             description: "A responsive landing page with smooth scroll animations and vibrant, mood-reflective colors to convey the organization’s energy and mission.",
             link:"https://clear-mind-m4mn.onrender.com",
             code:"https://github.com/ozi-sadiq-kasai/clear-mind",
         },
-        {
-            image: cbae,
-            heading: "Fully Responsive Menu Listing",
-            link:'https://react-cbae-menu.vercel.app',
-            description: "A fully responsive restaurant menu app for a local eatery, powered by a CMS backend for effortless menu and price updates",
-        }
+       
      
     ];
 
@@ -73,6 +82,7 @@ const StyledProjects = styled.ul`
         padding:0;
         text-align: center;
         border-radius: 5px;
+        min-height:65vh;
     }
 
     .img {

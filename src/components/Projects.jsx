@@ -78,11 +78,10 @@ const StyledProjects = styled.ul`
 
     li {
         flex: 1 1 calc(30% - 15px); 
-        border: 1px solid var(--primary-100);
+        /* border: 1px solid var(--primary-100); */
         padding:0;
         text-align: center;
         border-radius: 5px;
-        min-height:80vh;
     }
 
     .img {

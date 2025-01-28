@@ -82,7 +82,7 @@ const StyledProjects = styled.ul`
         padding:0;
         text-align: center;
         border-radius: 5px;
-        min-height:65vh;
+        min-height:80vh;
     }
 
     .img {

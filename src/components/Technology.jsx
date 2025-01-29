@@ -7,11 +7,11 @@ import { BsFiletypeScss } from 'react-icons/bs';
 
 const Technology = () => {
     const languages = [
-        <FaNodeJs />,
-        <GrReactjs />,
-        <RiTailwindCssFill />,
-        <BsFiletypeCss />,
-        <BsFiletypeScss />,
+        <FaNodeJs key="nodejs" />,
+        <GrReactjs key="reactjs" />,
+        <RiTailwindCssFill key="tailwindcss" />,
+        <BsFiletypeCss key="css" />,
+        <BsFiletypeScss key="scss" />,
     ];
     const colors = ['#68A063', '#61DAFB', '#38BDF8', '#264de4', '#CF649A'];
     return (
